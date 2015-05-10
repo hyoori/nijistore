@@ -1,0 +1,484 @@
+/*Custom CSS*/
+
+body{
+font-family: Karla;
+}
+
+a{
+color:#222222;
+}
+
+/* Navigation Custom */
+.navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #222222}
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #222222}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+
+/* End Navigation Custom */
+
+#logo {
+margin-top: -10px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(http://placehold.it/1900x1080);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	margin-top:-82px;
+	z-index:-1;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../images/slider.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	margin-top:-112px;
+	z-index:-1;
+}
+
+.modal-body h4, .modal-title  {
+font-weight:bold;
+}
+
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.caption h5 {
+    font-family: Raleway;
+	font-size:13px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.price {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.thumbnail h3 {
+font-weight:bold;
+margin-left:20px;
+}
+
+.thumbnail .caption h4 a{
+font-weight:bold;
+color:#222222;
+}
+
+.thumbnail .caption h5{
+color:969fb3;
+font-weight:500;
+}
+
+.thumbnail .caption hr{
+margin-top:-1px;
+}
+
+.thumbnail .caption h6{
+margin-top:-10px;
+font-size:inherit;
+}
+
+.footers h5{
+font-weight:bold;
+}
+
+.footers .form-control {
+box-shadow:none;
+width:60%;
+height:30px;
+font-size:10px;
+font-weight:bold;
+}
+
+.footers .input-group{
+width:100%;
+}
+
+.footers .btn{
+box-shadow:none;
+width:33%;
+height:30px;
+font-size:10px;
+margin-left:5px;
+
+}
+
+.footerrrs{
+padding-right:30px;
+}
+
+.footers ul{
+list-style:none;
+padding:0;
+}
+
+.footers ul a{
+color:#53545a;
+font-size:12px;
+}
+
+.footers p{
+color:#53545a;
+font-size:12px;
+}
+
+.footers h5 a{
+color:#222222;
+}
+
+#product-category h5{
+font-weight:bold;
+}
+
+#product-category p, #brand-category p{
+font-weight:bold;
+}
+
+#product-category ul, #brand-category ul{
+list-style:none;
+padding:0;
+}
+
+#product-category ul a, #brand-category ul a{
+color:53545a;
+}
+
+#product-category h5 a{
+color:#222222;
+}
+
+.article{
+margin-bottom:50px;
+}
+
+.judul h4{
+font-weight:bold;
+padding:20px;
+}
+
+.judul h5{
+padding-left:22px;
+margin-top:-18px;
+}
+
+.isi p{
+margin-top:30px;
+font-weight:bold;
+}
+
+.pagination a{
+border:none;
+}
+
+.paging>li>a, .paging>li>span{
+border:none;
+color:#222222;
+}
+
+.jumbotron h2{
+font-weight:bold;
+}
+
+#angka-lima-jumbotron  h1{
+font-family:Raleway;
+font-weight:200;
+}
+
+#jumbroton-isi{
+margin-left:50px;
+margin-top:-80px;
+width:100%;
+}
+
+#jumbroton-isi h2{
+font-family:Raleway;
+font-weight:bolder;
+}
+
+#jumbroton-isi h4{
+color:#7d878c;
+font-size:14px;
+}
+
+#jumbroton-isi p{
+color:#7d878c;
+font-size:12px;
+}
+
+div.vertical-line{
+  width: 0px; /* Use only border style */
+  height: 100%; 
+  border: 1px inset; /* This is default border style for <hr> tag */
+  border-color: #f0f0f0;
+  margin-left:80px;
+}
+
+.judul-atas h5{
+font-weight:bold;
+}
+
+.archive-article h5{
+font-weight:bold;
+}
+
+#slide-article{
+background: url(../images/slider.jpg) no-repeat center center fixed;
+width: 100%;
+height: 70%;
+display: table;
+position: relative;
+background-size: cover;
+margin-top:-72px;
+z-index:-1;
+}
+
+.padding-section{
+padding: 50px 0;
+}
+
+.judul-slide-article h2 , .judul-slide-article p{
+color:#fff;
+}
+
+#text-banner-kiri{
+padding-top:30px;
+padding-right:35px;
+}
+
+#text-banner-kiri h3{
+font-family: Raleway;
+}
+
+#text-banner-kiri p {
+margin-left:20px;
+font-size:12px;
+}
+
+.no-box-shadow-and-border{
+border:none;
+box-shadow:none;
+}
+
+#instagram-gallery .col-md-2 .img-thumbnail{
+box-shadow:none;
+}
+
+#next-prev-instagram-gallery .fa-chevron-left{
+float:left;
+margin-left:-30px;
+margin-top:-100px;
+position:relative;
+}
+
+#next-prev-instagram-gallery .fa-chevron-right{
+float:right;
+margin-right:-30px;
+margin-top:-100px;
+position:relative;
+}
+
+#see-more a{
+color:#222222;
+text-decoration:underline;
+margin-left:250px;
+font-weight:bolder;
+font-family:Raleway;
+}
+
+.instagram-gallery-title{
+font-weight:bolder;
+font-family:Raleway;
+}
+
+#navigasi{
+z-index:1;
+}
+
+.product-description h4{
+font-weight:bold;
+}
+
+#label-out-of-stock{
+background-color:#aaaaaa;
+width:80px;
+margin-left:90px;
+margin-top:-29px;
+padding:5 0 0 8;
+}
+
+#label-10-off{
+background-color:#000;
+width:55px;
+margin-left:90px;
+margin-top:-29px;
+padding:5 0 0 8;
+}
+
+#label-out-of-stock p, #label-10-off p, #label-all-product-camera-fujifilm-out-of-stock p {
+color:#fff;
+font-size:10px;
+}
+
+.before-dicount{
+color:#d2d1c9;
+}
+
+#myTab{
+border:none;
+}
+
+#myTab a{
+font-family:Raleway;
+font-weight:bold;
+color:#222222;
+}
+
+#myTabContent .tab-pane{
+padding-left:15px;
+}
+
+#myTabContent .tab-pane h5{
+font-weight:bold;
+}
+
+#myTabContent .tab-pane p, #myTabContent .tab-pane ul, #myTabContent .tab-pane li{ 
+font-size:12px;
+}
+
+.navigasi-produk li{
+padding-right:30px;
+}
+
+.navigasi-produk>li.active>a, .navigasi-produk>li.active>a:hover, .navigasi-produk>li.active>a:focus{
+color:#000;
+font-weight:bold;
+background-color:#fff;
+}
+
+.navigasi-produk>li.active>a{
+font-size:17px;
+}
+
+.related-product h4{
+font-weight:bolder;
+font-family:Raleway;
+font-size:12px;
+}
+
+.related-product p{
+font-size:11px;
+}
+
+.related-product h5{
+color:#d2d1c9;
+}
+
+.img-out-stock img{
+opacity:0.4;
+}
+
