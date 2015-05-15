@@ -34,14 +34,17 @@ color:#222222;
 /* End Navigation Custom */
 
 #logo {
-margin-top: -10px;
+  float: left;
+  line-height: 20px;
+  margin-top:5px;
+  margin-left:40px;
 }
 
 header {
     position: relative;
     width: 100%;
+	height:100%;
     min-height: auto;
-    text-align: center;
     color: #fff;
     background-image: url(http://placehold.it/1900x1080);
     background-position: center;
@@ -49,9 +52,11 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	margin-top:-82px;
+	margin-top:-52px;
 	z-index:-1;
 }
+
+/*Header */
 
 #header {
     position: relative;
@@ -127,13 +132,18 @@ header .header-content .header-content-inner p {
     }
 }
 
+
+/*End Header */
+
 .caption {
-    height: 130px;
+    height: 20%;
     overflow: hidden;
 }
 
 .caption h4 {
     white-space: nowrap;
+	font-size:15px;
+	letter-spacing:2px;
 }
 
 .caption h5 {
@@ -155,7 +165,6 @@ header .header-content .header-content-inner p {
 }
 
 .thumbnail .caption-full {
-    padding: 9px;
     color: #333;
 }
 
@@ -172,6 +181,12 @@ color:#222222;
 .thumbnail .caption h5{
 color:969fb3;
 font-weight:500;
+letter-spacing:2px;
+font-size:12px;
+}
+
+.thumbnail .caption p{
+margin-top:-10px;
 }
 
 .thumbnail .caption hr{
@@ -183,16 +198,58 @@ margin-top:-10px;
 font-size:inherit;
 }
 
+.form-control{
+box-shadow:none;
+font-size:12px;
+font-weight:bolder;
+border-width:0.1em;
+border-color:#222;
+border-radius:0;
+color:#000;
+}
+
+.btn-default:hover{
+opacity:0.8;
+background-color:#000;
+color:#fff;
+}
+
+.btn-default:active{
+background-color:#000;
+color:#fff;
+}
+
+.btn-default{
+box-shadow:none;
+width:100%;
+height:45px;
+font-size:14px;
+border-color:#000;
+border-radius:0;
+color:#fff;
+background-color:#000;
+}
+
+.btn-product{
+width:300px;
+height:70px;
+}
+
+
 .footers h5{
 font-weight:bold;
+letter-spacing:1px;
 }
 
 .footers .form-control {
 box-shadow:none;
 width:60%;
 height:30px;
-font-size:10px;
-font-weight:bold;
+font-size:12px;
+font-weight:bolder;
+border-width:1px;
+border-color:#000;
+color:#000;
 }
 
 .footers .input-group{
@@ -201,11 +258,14 @@ width:100%;
 
 .footers .btn{
 box-shadow:none;
-width:33%;
+width:30%;
 height:30px;
-font-size:10px;
+font-size:14px;
 margin-left:5px;
-
+border-color:#000;
+border-radius:0;
+color:#fff;
+background-color:#000;
 }
 
 .footerrrs{
@@ -218,57 +278,130 @@ padding:0;
 }
 
 .footers ul a{
-color:#53545a;
+color:#222;
 font-size:12px;
 }
 
 .footers p{
-color:#53545a;
+color:#222;
 font-size:12px;
+margin-top:10px;
 }
 
 .footers h5 a{
 color:#222222;
 }
 
+.contact-bg-img{
+     background-image: url(http://placehold.it/1900x1200);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	margin-top:-112px;
+	z-index:-1;
+}
+
+.contact-form .form-control{
+text-align:center;
+border:none;
+height:50px;
+}
+
+.contact-form  h5, .contact-form p, .contact-form a {
+color:#fff;
+}
+
+#brand-category{
+margin-top:-18px;
+}
+
+#product-category, #brand-category{
+padding:50px;
+}
+
 #product-category h5{
 font-weight:bold;
+font-size:14px;
 }
 
 #product-category p, #brand-category p{
 font-weight:bold;
+font-size:16px;
+letter-spacing:1px;
 }
 
-#product-category ul, #brand-category ul{
+#product-category ul{
+list-style:none;
+padding:10;
+}
+
+#brand-category ul{
 list-style:none;
 padding:0;
 }
 
 #product-category ul a, #brand-category ul a{
 color:53545a;
+font-size:12px;
 }
 
 #product-category h5 a{
 color:#222222;
 }
 
-.article{
-margin-bottom:50px;
+.article h4{
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.article p{
+font-weight:bold;
+line-height:1.5;
+}
+
+.social-share h4{
+font-weight:bold;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.social-share{
+padding:14px;
+font-size:18px;
+}
+
+.article-navigation span{
+font-weight:bold;
+letter-spacing:2;
+}
+
+.article-navigation p{
+margin-top:5px;
+font-size:14px;
+}
+
+.judul{
+padding:20px;
 }
 
 .judul h4{
 font-weight:bold;
-padding:20px;
+padding:20 20 5 70;
+letter-spacing:1px;
+font-size:20px;
+line-height:1.3;
 }
 
 .judul h5{
-padding-left:22px;
-margin-top:-18px;
+margin-left:70px;
 }
 
 .isi p{
-margin-top:30px;
 font-weight:bold;
+padding:50 90 0 0;
+line-height:1.5;
 }
 
 .pagination a{
@@ -320,10 +453,19 @@ div.vertical-line{
 
 .judul-atas h5{
 font-weight:bold;
+font-size:20px;
+letter-spacing:2px;
+}
+
+.judul-atas p{
+font-weight:bold;
+font-size:13px;
 }
 
 .archive-article h5{
 font-weight:bold;
+font-size:18px;
+letter-spacing:1;
 }
 
 #slide-article{
@@ -341,17 +483,29 @@ z-index:-1;
 padding: 50px 0;
 }
 
-.judul-slide-article h2 , .judul-slide-article p{
+.judul-slide-article h2 {
 color:#fff;
+font-size:2.7em;
+text-align:left;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.judul-slide-article p {
+color:#fff;
+margin-right:80px;
+letter-spacing:2px;
 }
 
 #text-banner-kiri{
-padding-top:30px;
-padding-right:35px;
+padding:30 90 100 10;
 }
 
 #text-banner-kiri h3{
 font-family: Raleway;
+font-size:22px;
+font-weight:bolder;
+letter-spacing:2px;
 }
 
 #text-banner-kiri p {
@@ -388,19 +542,38 @@ text-decoration:underline;
 margin-left:250px;
 font-weight:bolder;
 font-family:Raleway;
+font-size:13px;
+letter-spacing:2px;
 }
 
 .instagram-gallery-title{
 font-weight:bolder;
 font-family:Raleway;
+font-size:18px;
+letter-spacing:1px;
 }
 
-#navigasi{
+.navigasi{
 z-index:1;
+width:100%;
+margin:auto;
+}
+
+.product-description{
+margin-top:-20px;
+}
+
+.product-description h3{
+font-weight:bold;
+letter-spacing:2px;
 }
 
 .product-description h4{
 font-weight:bold;
+}
+
+.product-description p{
+font-size:18px;
 }
 
 #label-out-of-stock{
@@ -414,8 +587,8 @@ padding:5 0 0 8;
 #label-10-off{
 background-color:#000;
 width:55px;
-margin-left:90px;
-margin-top:-29px;
+margin-left:120px;
+margin-top:-30px;
 padding:5 0 0 8;
 }
 
@@ -450,8 +623,20 @@ font-weight:bold;
 font-size:12px;
 }
 
+.navigasi-produk {
+border-top:1px solid;
+border-bottom:1px solid;
+border-color:ccc;
+}
+
 .navigasi-produk li{
 padding-right:30px;
+margin-left:25px;
+}
+
+.navigasi-produk li a{
+font-size:12px;
+margin-top:5px;
 }
 
 .navigasi-produk>li.active>a, .navigasi-produk>li.active>a:hover, .navigasi-produk>li.active>a:focus{
@@ -464,21 +649,262 @@ background-color:#fff;
 font-size:17px;
 }
 
-.related-product h4{
-font-weight:bolder;
-font-family:Raleway;
+.media-body h4{
+font-size:15px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.media-body p{
+font-size:14px;
+font-weight:bold;
+}
+
+.media-body h5{
+font-size:12px;
+color:#333;
+}
+
+.font-12px, .bca-klikpay, .total-label, .have-coupon p {
 font-size:12px;
 }
 
-.related-product p{
+.have-coupon .form-control{
+width:45%;
+height:40px;
+}
+
+.have-coupon .btn-default{
+width:30%;
+height:40px;
+margin-left:10px;
+}
+
+.total-price{
+font-size:16px;
+}
+
+.control-label{
 font-size:11px;
+color:#8c8c8c;
+font-family:Raleway;
+letter-spacing:1px;
+}
+
+.radio, .shipping-method-detail {
+margin-left:24px;
+font-size:12px;
+}
+
+.payment-info{
+background-color:#eeeeee;
+padding:10;
+border:solid;
+border-radius:10px;
+border-width:1px;
+}
+
+.brand-product-order-overview{
+font-size:16px;
+font-weight:bold;
+}
+
+.type-product-order-overview{
+font-size:12px;
+}
+
+.price-product-order-overview{
+font-size:13px;
+font-weight:bold;
+}
+
+.table-summary-order td{
+font-size:12px;
+font-weight:bold;
+}
+
+.table-summary-order .total td{
+font-size:16px;
+font-weight:bold;
+}
+
+.related-product h4{
+font-weight:bolder;
+font-family:Raleway;
+font-size:16px;
+letter-spacing:1px;
+}
+
+
+.related-product p{
+font-size:12px;
 }
 
 .related-product h5{
 color:#d2d1c9;
 }
 
+.price-related-product{
+font-size:14px;
+}
+
 .img-out-stock img{
 opacity:0.4;
 }
 
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index:2;
+color:#000;
+font-weight:bold;
+background:none;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+background:none;
+border:none;
+}
+
+.navigation-breadcrumb p{
+font-size:16px;
+font-weight:bold;
+}
+
+.navigation-breadcrumb li a{
+font-size:12px;
+}
+
+.navigation-breadcrumb .breadcrumb{
+background:none;
+border:none;
+}
+
+.breadcrumb-new{
+background:none;
+border:none;
+}
+
+.breadcrumb-new>li+li:before{
+content: ">";
+padding:1px;
+color:#ccc;
+}
+
+.breadcrumb-new>.active{
+color:#000;
+font-weight:bold;
+font-size:14px;
+}
+
+.nav-product{
+border-style:solid;
+border-width:1px;
+border-left:none;
+border-bottom:none;
+border-right:none;
+border-radius:0;
+border-color:#ccc;
+}
+
+.nav-product ol span{
+border-style:solid;
+border-width:1px;
+border-left:none;
+border-bottom:none;
+border-top:none;
+border-radius:0;
+border-color:#ccc;
+padding:10 10 10 0;
+font-size:16px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.nav-product li {
+margin-left:10px;
+}
+
+.nav-product li a {
+font-size:14px;
+}
+
+.qty-cart span{
+padding-right:12px;
+}
+
+.btn-cart-minplus{
+background-color:#fff;
+border-width:1px solid;
+color:#000;
+text-align:center;
+width:25%;
+height:30px;
+font-weight:bold;
+}
+
+.btn-cart-chekout{
+width:90%;
+}
+
+.btn-cart-coupon{
+width:20%;
+height:40px;
+}
+
+.price-cart{
+font-size:14px;
+font-weight:bold;
+}
+
+.table-cart{
+border:1px solid;
+border-left:none;
+border-bottom:none;
+border-right:none;
+border-color:#ccc;
+}
+
+.table-cart>tbody>tr>td, .table-cart th{
+border-left:none;
+border-bottom:none;
+border-top:none;
+border-color:#ccc;
+}
+
+.table-cart .no-bord{
+border:none;
+}
+
+.right-bord{
+border-right:1px solid;
+border-left:none;
+border-bottom:none;
+border-top:none;
+border-color:#ccc;
+}
+
+#right-bord{
+border-right:1px solid;
+border-left:none;
+border-bottom:none;
+border-top:none;
+border-color:#ccc;
+}
+
+.header-modal{
+border:none;
+}
+
+.signup-checkout h5{
+font-size:16px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.signup-checkout p{
+font-size:12px;
+}
+
+
+.title-payment{
+font-size:16px;
+}
