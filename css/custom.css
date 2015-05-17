@@ -959,3 +959,56 @@ border-color:#fff;
 .text-white{
 color:#fff;
 }
+
+.my-account { text-align:center; }
+.my-account ul.nav-pills { display:inline-block; }
+.my-account li { display:inline;}
+.my-account a { float:left; letter-spacing:1px; color:#535353; font-size:14px;}
+* html .my-account ul.nav-pills { display:inline; } /* IE6 */
+*+html .my-account ul.nav-pills { display:inline; } /* IE7 */
+
+.nav-my-account>li.active>a, .nav-my-account>li.active>a:hover, .nav-my-account>li.active>a:focus{
+background-color:transparent;
+color:#000;
+font-weight:bold;
+border-bottom:1px solid;
+border-radius:0;
+border-color:#ccc;
+}
+
+.nav-my-account>li:hover{
+background:none;
+}
+
+.my-account-form .form-control{
+height:40px;
+border-color:#ccc;
+}
+
+.my-account-form .btn-default{
+width:80%;
+}
+
+.edit-delete{
+float:right;
+padding-top:55px;
+}
+
+.friends h5{
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.friends a{
+font-size:13px;
+letter-spacing:2px;
+color:#535353;
+}
+
+.friends .friends-name, .friends .friends-phone, .friends .friends-house{
+color:#535353;
+}
+
+.friends .form-control{
+border-color:#ccc;
+}
