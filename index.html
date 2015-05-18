@@ -9,6 +9,11 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrapValidator.css" rel="stylesheet">
 		
+		<!--Slick Slider-->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Add the new slick-theme.css if you want the default styling-->
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		
 		<!-- Style -->
 		<link href="css/custom.css" rel="stylesheet">
 		
@@ -345,35 +350,50 @@
 			
 			
 			<div class="row">
-				<div class="col-md-12" id="instagram-gallery">			
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" src="http://placehold.it/200x200"></img>
+				<div class="col-md-12">
+					  <div class="slider lazy instagram-gallery">
+					  <div class="slick-slide slide-cloned" data-slick-index="-3" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="-2" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="-1" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="0" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="1" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="2" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <div class="slick-slide slide-cloned" data-slick-index="3" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <button type="button" data-role="none" class="slick-prev fa fa-angel-left" aria-label="previous" >Previous</button>
+					  <button type="button" data-role="none" class="slick-next fa fa-angel-right" aria-label="next" >Next</button>
 					</div>
 				</div>
-			</div>
-			
-			<div id="next-prev-instagram-gallery">
-				<a href=""><i class="fa fa-chevron-left fa-3x"></i></a>
-				<a href=""><i class="fa fa-chevron-right fa-3x"></i></a>
-			</div>			
-		<!-- End Konten -->		
+			</div>		
 		</div>
-	</div>
+	</div><!-- End container -->		
 	
 	
 	<!--Footer-->	
@@ -422,12 +442,26 @@
 	</div>
 	<br/>
 	<!--End Footer-->	
-	
-	
+		
 	 <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.lazy').slick({
+			lazyLoad: 'ondemand',
+			slidesToShow: 6,
+			slidesToScroll: 1
+		  });
+		});
+	</script>
+	
 	</body>
 </html>
