@@ -882,6 +882,14 @@ border-top:none;
 border-color:#ccc;
 }
 
+.left-bord{
+border-left:1px solid;
+border-right:none;
+border-bottom:none;
+border-top:none;
+border-color:#ccc;
+}
+
 #right-bord{
 border-right:1px solid;
 border-left:none;
@@ -1011,4 +1019,87 @@ color:#535353;
 
 .friends .form-control{
 border-color:#ccc;
+}
+
+.table-order-history>thead th{
+font-size:12px;
+text-align:center;
+line-height:3;
+font-weight:bold;
+}
+
+.table-order-history>tbody td{
+font-size:12px;
+text-align:center;
+line-height:2;
+color:#535353;
+font-weight:bold;
+}
+
+.table-order-history>tbody td a{
+color:#ccc;
+letter-spacing:1px;
+}
+
+.table-order-history2>thead th{
+font-size:12px;
+line-height:3;
+font-weight:bold;
+}
+
+.table-order-history2>tbody td h4{
+font-size:14px;
+line-height:2;
+}
+
+.table-order-history2>tbody td .produk-name{
+font-size:13px;
+color:#ccc;
+}
+
+.tbl-total td{
+font-size:12px;
+font-weight:bold;
+line-height:1.8;
+}
+
+.tbl-total .total-price-order-history td{
+font-size:18px;
+}
+
+.address-order-history .friends-title{
+font-family:'Raleway';
+font-size:12px;
+}
+
+.address-order-history .friends-name, .address-order-history .friends-phone, .address-order-history .friends-house{
+color:#535353;
+font-size:12px;
+font-weight:bold;
+}
+
+.faqs-privacy-terms{
+font-weight:bold;
+}
+
+.faqs-privacy-terms p{
+font-size:13px;
+line-height:1.5;
+}
+
+.faqs-privacy-terms ul{
+list-style:none;
+padding:0;
+font-family:Raleway;
+font-size:12px;
+letter-spacing:1px;
+line-height:2;
+}
+
+.faqs-privacy-terms h3{
+font-family:Raleway;
+font-size:18px;
+font-weight:bolder;
+letter-spacing:1px;
+line-height:2;
 }

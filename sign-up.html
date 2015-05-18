@@ -22,7 +22,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	</head>
 	
-	<body>
+	<body>	
 	<!-- Navigation -->	
    <div class="container navigasi">
 		<nav class="navbar navbar-inverse navbar-default text-center navigasi" role="navigation">
@@ -61,8 +61,27 @@
 						<li>
 							<a href="my-cart.html">Chart (0)</a>
 						</li>
-						<li>
-							<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+						<li class="dropdown hidden-xs">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+							<ul class="dropdown-menu" style="padding:20px; width:300px;">
+								<form class="form-inline">
+									<button type="submit" class="btn btn-default pull-right" style="width:30%; height:34px;"><i class="glyphicon glyphicon-search"></i></button>
+									<input type="text" class="form-control pull-left" style="width:70%;" placeholder="Search...">
+								</form>
+							  </ul>
+						</li>
+						<li class="visible-xs">
+						  <form role="search">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="input-group">
+								  <input type="text" class="form-control" name="q" style="height:40px;" placeholder="Search...">
+								  <span class="input-group-btn">
+									<button class="btn btn-primary" type="submit" style="height:40px;"><span class="glyphicon glyphicon-search"></span></button>
+									<button class="btn btn-danger" type="reset" style="height:40px;"><span class="glyphicon glyphicon-remove"></span></button>
+								  </span>
+								</div>
+							</div>
+						  </form>
 						</li>
 					</ul>
 				</div>
@@ -75,78 +94,78 @@
 	<br/><br/><br/>
 	
 	<div class="contact-bg-img">
-	<!--Container-->
-	<div class="container">
-		<div class="col-md-12">
-			<!-- Konten -->
-			<div class="row">
-				<div class="col-md-3"></div>
-				
-				<div class="col-md-6">
-					
-					<div class="text-center judul-atas contact-form">
-					<br/><br/><br/><br/><br/><br/><br/>
-						<h5><i class="fa fa-key"></i> REGISTER</h5>
-						<br/>
-					</div>
-					
+		<!--Container-->
+		<div class="container">
+			<div class="col-md-12">
+				<!-- Konten -->
+				<div class="row">
 					<div class="col-md-3"></div>
 					
-					<div class="col-md-6">					
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group required">
-							<input class="form-control" size="4" type="email" placeholder="hyoori.song@gmail.com">
-						  </div>
+					<div class="col-md-6">
+						
+						<div class="text-center judul-atas contact-form">
+						<br/><br/><br/><br/><br/><br/><br/>
+							<h5><i class="fa fa-key"></i> REGISTER</h5>
+							<br/>
 						</div>
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group required">
-							<input class="form-control" size="4" type="text" placeholder="First Name">
-						  </div>
+						
+						<div class="col-md-3"></div>
+						
+						<div class="col-md-6">					
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group required">
+								<input class="form-control" size="4" type="email" placeholder="hyoori.song@gmail.com">
+							  </div>
+							</div>
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group required">
+								<input class="form-control" size="4" type="text" placeholder="First Name">
+							  </div>
+							</div>
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group required">
+								<input class="form-control" size="4" type="text" placeholder="Last Name">
+							  </div>
+							</div>
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group required">
+								<input class="form-control" size="4" type="password" placeholder="Password">
+							  </div>
+							</div>
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group required">
+								<input class="form-control" size="4" type="password" placeholder="Confirm Password">
+							  </div>
+							</div>
+							<div class="form-row contact-form">
+							  <div class="col-xs-12 form-group ">
+								<label  class="remember-me text-white">
+								  <input type="checkbox"> Sign Up for newsletter
+								</label>
+							  </div>
+							</div>
+							<div class="form-row">
+							  <div class="col-xs-12 form-group ">			  
+								<button class="btn btn-default" type="submit">REGISTER</button>
+							  </div>
+							</div>
+							<div class="form-row">
+							  <div class="col-xs-12 form-group">
+								<br/><br/>						  
+								<p class="text-center text-white">Already have an account?</p>					  
+								<button class="btn btn-default btn-register" type="button"  href="sign-in.html">SIGN-IN</button>
+							  </div>
+							</div>
 						</div>
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group required">
-							<input class="form-control" size="4" type="text" placeholder="Last Name">
-						  </div>
-						</div>
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group required">
-							<input class="form-control" size="4" type="password" placeholder="Password">
-						  </div>
-						</div>
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group required">
-							<input class="form-control" size="4" type="password" placeholder="Confirm Password">
-						  </div>
-						</div>
-						<div class="form-row contact-form">
-						  <div class="col-xs-12 form-group ">
-							<label  class="remember-me text-white">
-							  <input type="checkbox"> Sign Up for newsletter
-							</label>
-						  </div>
-						</div>
-						<div class="form-row">
-						  <div class="col-xs-12 form-group ">			  
-							<button class="btn btn-default" type="submit">REGISTER</button>
-						  </div>
-						</div>
-						<div class="form-row">
-						  <div class="col-xs-12 form-group">
-							<br/><br/>						  
-							<p class="text-center text-white">Already have an account?</p>					  
-							<button class="btn btn-default btn-register" type="button"  href="sign-in.html">SIGN-IN</button>
-						  </div>
-						</div>
+						
+						<div class="col-md-3"></div>
 					</div>
 					
-					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>				
 				</div>
-				
-				<div class="col-md-3"></div>				
+			<!--End Konten-->		
 			</div>
-		<!--End Konten-->		
-		</div>
-	</div><!--End Container-->
+		</div><!--End Container-->
 	</div>
 	<br/>
 	
@@ -170,9 +189,9 @@
 					<div class="col-sm-12 col-md-3 footers">
 						<h5><a href="#">CUSTOMER</a></h5>
 						<ul class="hidden-xs">
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms and Conditions</a></li>
-							<li><a href="#">FAQs</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
 						</ul>
 					</div>
 					
@@ -180,9 +199,9 @@
 						<h5><a href="#">SITE</a></h5>
 						<ul class="hidden-xs">
 							<li><a href="#">About Us</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#">Careers</a></li>
-							<li><a href="#">Confirm Payment</a></li>
+							<li><a href="confirm-payment.html">Confirm Payment</a></li>
 						</ul>
 					</div>
 					
@@ -195,16 +214,7 @@
 		</div>
 	</div>
 	<br/>
-	<!--End Footer-->
-	
-	
-	<!--Container-->
-	<div class="container">
-		
-	</div>
-	<!--End Container-->
-	
-	
+	<!--End Footer-->	
 	
 	 <!-- jQuery -->
     <script src="js/jquery.js"></script>

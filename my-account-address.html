@@ -22,7 +22,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	</head>
 	
-	<body>
+	<body>	
 	<!-- Navigation -->	
    <div class="container navigasi">
 		<nav class="navbar navbar-inverse navbar-default text-center navigasi" role="navigation">
@@ -61,8 +61,27 @@
 						<li>
 							<a href="my-cart.html">Chart (0)</a>
 						</li>
-						<li>
-							<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+						<li class="dropdown hidden-xs">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+							<ul class="dropdown-menu" style="padding:20px; width:300px;">
+								<form class="form-inline">
+									<button type="submit" class="btn btn-default pull-right" style="width:30%; height:34px;"><i class="glyphicon glyphicon-search"></i></button>
+									<input type="text" class="form-control pull-left" style="width:70%;" placeholder="Search...">
+								</form>
+							  </ul>
+						</li>
+						<li class="visible-xs">
+						  <form role="search">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="input-group">
+								  <input type="text" class="form-control" name="q" style="height:40px;" placeholder="Search...">
+								  <span class="input-group-btn">
+									<button class="btn btn-primary" type="submit" style="height:40px;"><span class="glyphicon glyphicon-search"></span></button>
+									<button class="btn btn-danger" type="reset" style="height:40px;"><span class="glyphicon glyphicon-remove"></span></button>
+								  </span>
+								</div>
+							</div>
+						  </form>
 						</li>
 					</ul>
 				</div>
@@ -75,183 +94,183 @@
 	<br/><br/><br/>
 	
 	<div class="contact">
-	<!--Container-->
-	<div class="container">
-		<div class="col-md-12">
-			<!-- Konten -->
-			<div class="row">
-				<div class="col-md-3"></div>
-				
-				<div class="col-md-6">
+		<!--Container-->
+		<div class="container">
+			<div class="col-md-12">
+				<!-- Konten -->
+				<div class="row">
+					<div class="col-md-3"></div>
 					
-					<div class="text-center judul-atas">
-						<br/><br/><br/><br/>
-						<h5><i class="fa fa-user"></i> MY ACCOUNT</h5>
-						<br/><br/><br/>
-					</div>
-					
-					
-					<div class="my-account text-center">
-						<ul class="nav nav-pills nav-my-account">
-							<li><a href="my-account.html"><i class="fa fa-info-circle"></i> INFORMATION</a></li>
-							<li class="active"><a href="my-account-address.html"><i class="fa fa-home"></i> ADDRESSES</a></li>
-							<li><a href="my-account-order-history.html"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
-						</ul>																					
-					</div>
-					
-					<div class="col-md-1"></div>
-					<div class="col-md-10">
-						<br/>
-						<br/>
-						<br/>
-						<h5 style="font-size:16px; font-weight:bold; letter-spacing:1px; text-align:center;">LIST OF ADDRESSES</h5>
-						<br/>
-						<br/>
-						<div class="row">						
-						  <div class="col-xs-6 col-md-6 friends">
-							<h5>FRIEND'S HOUSE</h5>
-							<span class="friends-name">Visien Vinesa</span>
-							<span class="friends-phone">(081992070707)</span>
-							<p class="friends-house">Jln. Raya Duri No.98 A RT 001 RW 003 Kecamatan Cengkareng Jakarta Barat, DKI Jakarta, 11750</p>
-						  </div>
-						  <div class="col-xs-6 col-md-6 friends">
-							<div class="edit-delete">
-								<a href=""><i class="fa fa-edit"></i> EDIT</a>
-								<br/>
-								<a href=""><i class="fa fa-close"></i> DELETE</a>
-							</div>
-						  </div>
-						</div>
-						<br/>	
-						<div class="row">						
-						  <div class="col-xs-6 col-md-6 friends">
-							<h5>FRIEND'S HOUSE</h5>
-							<span class="friends-name">Visien Vinesa</span>
-							<span class="friends-phone">(081992070707)</span>
-							<p class="friends-house">Jln. Raya Duri No.98 A RT 001 RW 003 Kecamatan Cengkareng Jakarta Barat, DKI Jakarta, 11750</p>
-						  </div>
-						  <div class="col-xs-6 col-md-6 friends">
-							<div class="edit-delete">
-								<a href=""><i class="fa fa-edit"></i> EDIT</a>
-								<br/>
-								<a href=""><i class="fa fa-close"></i> DELETE</a>
-							</div>
-						  </div>
-						</div>
-										
-						<div class="form-row">
-						  <div class="col-xs-12 col-md-12 form-group required my-account-form text-center">
-							<br/>
-							<button class="btn btn-default" type="submit">ADD NEW ADDRESSS</button>
-							<br/>
-							<br/>
-							<br/>
-							<br/>
-						  </div>
+					<div class="col-md-6">
+						
+						<div class="text-center judul-atas">
+							<br/><br/><br/><br/>
+							<h5><i class="fa fa-user"></i> MY ACCOUNT</h5>
+							<br/><br/><br/>
 						</div>
 						
-						<div class="row">
-							<h5 style="font-size:16px; font-weight:bold; letter-spacing:1px; text-align:center;">ADD / EDIT ADDRESS</h5>
+						
+						<div class="my-account text-center">
+							<ul class="nav nav-pills nav-my-account">
+								<li><a href="my-account.html"><i class="fa fa-info-circle"></i> INFORMATION</a></li>
+								<li class="active"><a href="my-account-address.html"><i class="fa fa-home"></i> ADDRESSES</a></li>
+								<li><a href="my-account-order-history.html"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+							</ul>																					
 						</div>
-						<br/>
-						<br/>
-						<br/>
-						<div class="form-row">
-							<div class="form-row">
-							  <div class="col-xs-12 form-group required friends">
-								<label class="control-label">ADDRESS NAME</label>
-								<input class="form-control" size="4" type="text" placeholder="E.g. Home, Office, Cindy's House">
+						
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<br/>
+							<br/>
+							<br/>
+							<h5 style="font-size:16px; font-weight:bold; letter-spacing:1px; text-align:center;">LIST OF ADDRESSES</h5>
+							<br/>
+							<br/>
+							<div class="row">						
+							  <div class="col-xs-6 col-md-6 friends">
+								<h5>FRIEND'S HOUSE</h5>
+								<span class="friends-name">Visien Vinesa</span>
+								<span class="friends-phone">(081992070707)</span>
+								<p class="friends-house">Jln. Raya Duri No.98 A RT 001 RW 003 Kecamatan Cengkareng Jakarta Barat, DKI Jakarta, 11750</p>
 							  </div>
-							</div>
-							
-							  <div class="col-xs-6 form-group required friends">
-								<label class="control-label">FIRST NAME</label>
-								<input class="form-control" size="4" type="text" placeholder="Visien">
-							  </div>
-							  <div class="col-xs-6 form-group required friends">
-								<label class="control-label">LAST NAME</label>
-								<input class="form-control" size="4" type="text" placeholder="Vinesa">
-							  </div>
-							</div>
-														
-							<div class="form-row">
-							  <div class="col-xs-12 form-group required friends">
-								<label class="control-label">EMAIL ADDRESS</label>
-								<input class="form-control" size="4" type="email" placeholder="visien@vinesa.com">
-							  </div>
-							</div>
-							
-							<div class="form-row">							
-							  <div class="col-xs-12 form-group required friends">
-								<label class="control-label">PHONE NUMBER</label>
-								<input class="form-control" size="4" type="text" placeholder="E.g. 08123456789">
-							  </div>
-							</div>
-							
-							<div class="form-row">
-							  <div class="col-xs-12 form-group required friends">
-								<label class="control-label">ADDRESS</label>
-								<textarea class="form-control" rows="5" placeholder="Address"></textarea>
-							  </div>
-							</div>
-							
-							<div class="form-row">
-							  <div class="col-xs-6 form-group required friends">
-								<label class="control-label">PROVINCE</label>
-								<select class="form-control" placeholder="Inquiry">
-								  <option>DKI Jakarta</option>
-								  <option>Jawa Timur</option>
-								  <option>Jawa Tengah</option>
-								  <option>Jawa Barat</option>
-								  <option>Bali</option>
-								</select>
-							  </div>
-							  <div class="col-xs-6 form-group required friends">
-								<label class="control-label">CITY</label>
-								<select class="form-control" placeholder="Inquiry">
-								  <option>Jakarta Pusat</option>
-								  <option>Jakarta Timur</option>
-								  <option>Jakarta Selatan</option>
-								  <option>Jakarta Barat</option>
-								</select>
-							  </div>
-							</div>
-							
-							<div class="form-row">
-							  <div class="col-xs-6 form-group required friends">
-								<label class="control-label">POSTAL CODE</label>
-								<input class="form-control" size="4" type="text" placeholder="12345">
-							  </div>
-							  <div class="col-xs-6 form-group required">
-								<label class="control-label">COUNTRY</label>
-								<p>Indonesia</p>
-							  </div>
-							</div>
-							
-							<div class="form-row">
-								<div class="col-xs-12 form-group">
-									<i><p class="font-12px">Currently we only provide shipping to Indonesia</p></i>
+							  <div class="col-xs-6 col-md-6 friends">
+								<div class="edit-delete">
+									<a href=""><i class="fa fa-edit"></i> EDIT</a>
+									<br/>
+									<a href=""><i class="fa fa-close"></i> DELETE</a>
 								</div>
+							  </div>
 							</div>
-
+							<br/>	
+							<div class="row">						
+							  <div class="col-xs-6 col-md-6 friends">
+								<h5>FRIEND'S HOUSE</h5>
+								<span class="friends-name">Visien Vinesa</span>
+								<span class="friends-phone">(081992070707)</span>
+								<p class="friends-house">Jln. Raya Duri No.98 A RT 001 RW 003 Kecamatan Cengkareng Jakarta Barat, DKI Jakarta, 11750</p>
+							  </div>
+							  <div class="col-xs-6 col-md-6 friends">
+								<div class="edit-delete">
+									<a href=""><i class="fa fa-edit"></i> EDIT</a>
+									<br/>
+									<a href=""><i class="fa fa-close"></i> DELETE</a>
+								</div>
+							  </div>
+							</div>
+											
 							<div class="form-row">
 							  <div class="col-xs-12 col-md-12 form-group required my-account-form text-center">
 								<br/>
-								<button class="btn btn-default" type="submit">UPDATE</button>
+								<button class="btn btn-default" type="submit">ADD NEW ADDRESSS</button>
+								<br/>
 								<br/>
 								<br/>
 								<br/>
 							  </div>
 							</div>
-					</div>					
-					<div class="col-md-1"></div>
+							
+							<div class="row">
+								<h5 style="font-size:16px; font-weight:bold; letter-spacing:1px; text-align:center;">ADD / EDIT ADDRESS</h5>
+							</div>
+							<br/>
+							<br/>
+							<br/>
+							<div class="form-row">
+								<div class="form-row">
+								  <div class="col-xs-12 form-group required friends">
+									<label class="control-label">ADDRESS NAME</label>
+									<input class="form-control" size="4" type="text" placeholder="E.g. Home, Office, Cindy's House">
+								  </div>
+								</div>
+								
+								  <div class="col-xs-6 form-group required friends">
+									<label class="control-label">FIRST NAME</label>
+									<input class="form-control" size="4" type="text" placeholder="Visien">
+								  </div>
+								  <div class="col-xs-6 form-group required friends">
+									<label class="control-label">LAST NAME</label>
+									<input class="form-control" size="4" type="text" placeholder="Vinesa">
+								  </div>
+								</div>
+															
+								<div class="form-row">
+								  <div class="col-xs-12 form-group required friends">
+									<label class="control-label">EMAIL ADDRESS</label>
+									<input class="form-control" size="4" type="email" placeholder="visien@vinesa.com">
+								  </div>
+								</div>
+								
+								<div class="form-row">							
+								  <div class="col-xs-12 form-group required friends">
+									<label class="control-label">PHONE NUMBER</label>
+									<input class="form-control" size="4" type="text" placeholder="E.g. 08123456789">
+								  </div>
+								</div>
+								
+								<div class="form-row">
+								  <div class="col-xs-12 form-group required friends">
+									<label class="control-label">ADDRESS</label>
+									<textarea class="form-control" rows="5" placeholder="Address"></textarea>
+								  </div>
+								</div>
+								
+								<div class="form-row">
+								  <div class="col-xs-6 form-group required friends">
+									<label class="control-label">PROVINCE</label>
+									<select class="form-control" placeholder="Inquiry">
+									  <option>DKI Jakarta</option>
+									  <option>Jawa Timur</option>
+									  <option>Jawa Tengah</option>
+									  <option>Jawa Barat</option>
+									  <option>Bali</option>
+									</select>
+								  </div>
+								  <div class="col-xs-6 form-group required friends">
+									<label class="control-label">CITY</label>
+									<select class="form-control" placeholder="Inquiry">
+									  <option>Jakarta Pusat</option>
+									  <option>Jakarta Timur</option>
+									  <option>Jakarta Selatan</option>
+									  <option>Jakarta Barat</option>
+									</select>
+								  </div>
+								</div>
+								
+								<div class="form-row">
+								  <div class="col-xs-6 form-group required friends">
+									<label class="control-label">POSTAL CODE</label>
+									<input class="form-control" size="4" type="text" placeholder="12345">
+								  </div>
+								  <div class="col-xs-6 form-group required">
+									<label class="control-label">COUNTRY</label>
+									<p>Indonesia</p>
+								  </div>
+								</div>
+								
+								<div class="form-row">
+									<div class="col-xs-12 form-group">
+										<i><p class="font-12px">Currently we only provide shipping to Indonesia</p></i>
+									</div>
+								</div>
+
+								<div class="form-row">
+								  <div class="col-xs-12 col-md-12 form-group required my-account-form text-center">
+									<br/>
+									<button class="btn btn-default" type="submit">UPDATE</button>
+									<br/>
+									<br/>
+									<br/>
+								  </div>
+								</div>
+						</div>					
+						<div class="col-md-1"></div>
+					</div>
+					
+					<div class="col-md-3"></div>				
 				</div>
-				
-				<div class="col-md-3"></div>				
+			<!--End Konten-->		
 			</div>
-		<!--End Konten-->		
-		</div>
-	</div><!--End Container-->
+		</div><!--End Container-->
 	</div>
 	<br/>
 	
@@ -275,9 +294,9 @@
 					<div class="col-sm-12 col-md-3 footers">
 						<h5><a href="#">CUSTOMER</a></h5>
 						<ul class="hidden-xs">
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms and Conditions</a></li>
-							<li><a href="#">FAQs</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
 						</ul>
 					</div>
 					
@@ -285,9 +304,9 @@
 						<h5><a href="#">SITE</a></h5>
 						<ul class="hidden-xs">
 							<li><a href="#">About Us</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#">Careers</a></li>
-							<li><a href="#">Confirm Payment</a></li>
+							<li><a href="confirm-payment.html">Confirm Payment</a></li>
 						</ul>
 					</div>
 					

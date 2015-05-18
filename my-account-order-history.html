@@ -1,0 +1,379 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nijistore</title>
+		
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrapValidator.css" rel="stylesheet">
+		
+		<!-- Style -->
+		<link href="css/custom.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="icon" href="images/logo1.jpg" type="image/jpg" sizes="16x16">
+		
+		<!-- Font -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>	
+	<!-- Navigation -->	
+   <div class="container navigasi">
+		<nav class="navbar navbar-inverse navbar-default text-center navigasi" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="images/logo1.jpg" id="logo"></img>
+					<a class="navbar-brand" href="index.html">Nijistore</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="all-product.html">Shop</a>
+						</li>
+						<li>
+							<a href="journal.html">Journal</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<a>/</a>
+						</li>
+						<li>
+							<a href="#">Sign In</a>
+						</li>
+						<li>
+							<a href="my-cart.html">Chart (0)</a>
+						</li>
+						<li class="dropdown hidden-xs">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+							<ul class="dropdown-menu" style="padding:20px; width:300px;">
+								<form class="form-inline">
+									<button type="submit" class="btn btn-default pull-right" style="width:30%; height:34px;"><i class="glyphicon glyphicon-search"></i></button>
+									<input type="text" class="form-control pull-left" style="width:70%;" placeholder="Search...">
+								</form>
+							  </ul>
+						</li>
+						<li class="visible-xs">
+						  <form role="search">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="input-group">
+								  <input type="text" class="form-control" name="q" style="height:40px;" placeholder="Search...">
+								  <span class="input-group-btn">
+									<button class="btn btn-primary" type="submit" style="height:40px;"><span class="glyphicon glyphicon-search"></span></button>
+									<button class="btn btn-danger" type="reset" style="height:40px;"><span class="glyphicon glyphicon-remove"></span></button>
+								  </span>
+								</div>
+							</div>
+						  </form>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+		</nav>
+	</div>
+	<!-- /.container -->
+	<!-- End Navigation -->
+	
+	<br/><br/><br/>
+	
+	<div class="contact">
+		<!--Container-->
+		<div class="container">
+			<div class="col-md-12">
+				<!-- Konten -->
+				<div class="row">
+					<div class="col-md-3"></div>				
+					<div class="col-md-6">					
+						<div class="text-center judul-atas">
+							<br/><br/><br/><br/>
+							<h5><i class="fa fa-user"></i> MY ACCOUNT</h5>
+							<br/><br/><br/>
+						</div>					
+						
+						<div class="my-account text-center">
+							<ul class="nav nav-pills nav-my-account">
+								<li><a href="my-account.html"><i class="fa fa-info-circle"></i> INFORMATION</a></li>
+								<li><a href="my-account-address.html"><i class="fa fa-home"></i> ADDRESSES</a></li>
+								<li class="active"><a href="my-account-order-history.html"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+							</ul>
+
+							<br/>
+							<br/>
+							<br/>
+							<h5 style="font-size:16px; font-weight:bold; letter-spacing:1px; text-align:center;">ORDER HISTORY</h5>
+							<br/>
+							<br/>		
+						</div>										
+					</div>				
+					<div class="col-md-3"></div>				
+				</div>
+				
+				<div class="row">
+					<div class="col-md-8 col-md-offset-3">
+						<table class="table-responsive table-order-history text-center">
+							<thead>
+								<tr>
+									<th class="no-bord" id="right-bord">ORDER REFERENCE</th>
+									<th class="no-bord" id="right-bord">DATE</th>
+									<th class="no-bord" id="right-bord">TOTAL PRICE</th>
+									<th class="no-bord" id="right-bord">STATUS</th>
+									<th class="no-bord" id="right-bord">INVOICE</th>
+									<th class="no-bord"></th>
+								</tr>
+								
+								<tbody>
+									<tr>
+										<td class="col-md-2 right-bord">KCNTCDOAB</td>
+										<td class="col-md-2 right-bord">2013-10-27</td>
+										<td class="col-md-2 right-bord">IDR 16,200,000</td>
+										<td class="col-md-2 right-bord">Cancelled</td>
+										<td class="col-md-2 right-bord"><a href=""><i class="fa fa-file-pdf-o"></i> PDF</a></td>
+										<td class="col-md-2 "><a href="">View Details</a></td>
+									</tr><tr>
+										<td class="col-md-2 right-bord">KCNTCDOAB</td>
+										<td class="col-md-2 right-bord">2013-10-27</td>
+										<td class="col-md-2 right-bord">IDR 162,000</td>
+										<td class="col-md-2 right-bord">Pending</td>
+										<td class="col-md-2 right-bord"><a href=""><i class="fa fa-file-pdf-o"></i> PDF</a></td>
+										<td class="col-md-2"><a href="">View Details</a></td>
+									</tr><tr>
+										<td class="col-md-2 right-bord">KCNTCDOAB</td>
+										<td class="col-md-2 right-bord">2013-10-27</td>
+										<td class="col-md-2 right-bord">IDR 162,000</td>
+										<td class="col-md-2 right-bord">Pending</td>
+										<td class="col-md-2 right-bord"><a href=""><i class="fa fa-file-pdf-o"></i> PDF</a></td>
+										<td class="col-md-2 "><a href="">View Details</a></td>
+									</tr>
+								</tbody>
+							</thead>
+						</table>		
+					</div>
+				</div>
+				
+				<br/>
+				
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+					<div class="thumbnail col-md-12" style="padding:30px;">
+						<div class="isi-order-history">
+							<span style="font-weight:bold; font-size:16px;">ORDER #KCNTCDOAB</span> <span style="font-size:16px; font-weight:normal;margin-left:40px;">PLACED ON 2014-01-08</span>
+							<br/>
+							<br/>
+							<div class="row">
+								<div class="col-xs-12 col-md-4 address-order-history">
+									<p><strong>Order was sent to:</strong></p>
+									<span class="friends-name">Visien Vinesa</span>
+									<span class="friends-phone">(081992070707)</span>
+									<p class="friends-house">Jln. Raya Duri No.98 A RT 001 RW 003 Kecamatan Cengkareng Jakarta Barat, DKI Jakarta, 11750</p>
+								</div>
+								<div class="col-xs-12 col-md-4 address-order-history">
+									<p><strong>Status</strong> : Shipped</p>
+									<p><strong>Total Order</strong> : IDR 160,000</p>
+									<p><strong>Payment Method</strong> : BCA</p>
+									<p><strong>Courier</strong> : JNE Reguler</p>
+								</div>
+								<div class="col-md-4"></div>
+							</div>
+
+							<div class="row">
+							<br/>
+							<br/>
+							<br/>
+							<table class="table table-order-history2">
+								<thead>
+									<tr>
+										<th class="no-bord" id="right-bord">ITEM DESCRIPTION</th>
+										<th class="no-bord" id="right-bord">PRICE EACH</th>
+										<th class="no-bord" id="right-bord">QUANTITY</th>
+										<th class="no-bord">SUBTOTAL</th>
+									</tr>
+									
+									<tbody>
+										<tr>
+											 <td class="col-sm-8 col-md-6 right-bord">
+												<div class="media">
+													<a class="pull-left" href="#"> <img class="img-responsive media-object" src="images/pd-1.jpg" style="width: 90px; height: 90px;"> </a>
+													<div class="media-body">
+														<h4 class="media-heading">FUJIFILM</h4>
+														<p class="produk-name">FUJIFILM X100T</p>
+													</div>
+												</div>
+											</td>
+											<td class="col-md-2 right-bord">
+												<p class="price-cart">IDR 14,499,000</p>
+											</td>
+											<td class="col-md-2 right-bord text-center">
+												<div class="qty-cart">
+													<span>1</span>
+												</div>
+											</td>
+											<td class="col-md-2 no-bord">
+												<p class="price-cart">IDR 14,499,000</p>
+											</td>
+										</tr>
+										
+										<tr>
+											 <td class="col-sm-8 col-md-6 right-bord">
+												<div class="media">
+													<a class="pull-left" href="#"> <img class="img-responsive media-object" src="images/pd-2.jpg" style="width: 90px; height: 90px;"> </a>
+													<div class="media-body">
+														<h4 class="media-heading">MOTOROLA</h4>
+														<p class="produk-name">Motorola Moto 360 - Black Leather Smart Watch</p>
+													</div>
+												</div>
+											</td>
+											<td class="col-md-2 right-bord">
+												<p class="price-cart">IDR 3,499,000</p>
+											</td>
+											<td class="col-md-2 right-bord text-center">
+												<div class="qty-cart">
+													<span>2</span>
+												</div>
+											</td>
+											<td class="col-md-2">
+												<p class="price-cart no-bord">IDR 6,998,000</p>
+											</td>
+										</tr>
+										
+										<tr>
+											<td class="col-sm-8 col-md-6 right-bord">
+												<div class="media">
+													<a class="pull-left" href="#"> <img class="img-responsive media-object" src="http://placehold.it/200x200" style="width: 90px; height: 90px;"> </a>
+													<div class="media-body">
+														<h4 class="media-heading">OLYMPUS</h4>
+														<p class="produk-name">Olympus OM-D E-M1 with 12-40mm f2,8 PRO + M.Zuiko Digital 45mm f/1.8</p>
+													</div>
+												</div>
+											</td>
+											<td class="col-md-2 right-bord">
+												<p class="price-cart">IDR 27,999,000</p>
+											</td>
+											<td class="col-md-2 right-bord">
+												<div class="qty-cart text-center">
+													<span class="">1</span>
+												</div>
+											</td>
+											<td class="col-md-2">
+												<p class="price-cart no-bord">IDR 27,999,000</p>
+											</td>
+										</tr>
+									</tbody>
+								</thead>
+							</table>
+							
+							<div class="col-xs-12 col-md-5"></div>
+							
+							<div class="col-xs-12 col-md-3"></div>
+							
+							<div class="col-xs-12 col-md-4">
+								<table class="table-responsive tbl-total">
+									<tr>
+										<td width="300">TOTAL ORDER</td>
+										<td width="300">IDR 48,996,000</td>
+									</tr>
+									<tr>
+										<td>SHIPPING</td>
+										<td>IDR 450,000</td>
+									</tr>
+									<tr>
+										<td>PROMO CODE</td>
+										<td>IDR 500,000</td>
+									</tr>
+									<tr class="total-price-order-history">
+										<td>TOTAL</td>
+										<td>IDR 49,946,000</td>
+									</tr>
+									
+								</table>
+							</div>
+							</div>
+						</div>				
+					</div>				
+					</div>
+				</div>
+			<!--End Konten-->		
+			</div>
+		</div><!--End Container-->
+	</div>
+	<br/>
+	
+	<!--Footer-->	
+	<div class="container">
+		<div class="col-md-12">
+		<hr/>
+			<div class="row">
+				<div class="col-md-9">
+					<div class="col-sm-12 col-md-4 footers">
+						<h5>NEWSLETTER</h5>
+						<div class="input-group">
+						  <span><input type="text" class="form-control" placeholder="example@email.com"></span>
+						  <span>
+							<button class="btn btn-default" type="button">SIGN UP</button>
+						  </span>
+						</div>
+						<p>Sign up to our newsletter to get special promos and news</p>
+					</div>
+					
+					<div class="col-sm-12 col-md-3 footers">
+						<h5><a href="#">CUSTOMER</a></h5>
+						<ul class="hidden-xs">
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-12 col-md-2 footers">
+						<h5><a href="#">SITE</a></h5>
+						<ul class="hidden-xs">
+							<li><a href="#">About Us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="confirm-payment.html">Confirm Payment</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-12 col-md-3 footers">
+						<h5>NIJISTORE</h5>
+						<p>Nijistore sells stuff lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!--End Footer-->
+	
+	
+	<!--Container-->
+	<div class="container">
+		
+	</div>
+	<!--End Container-->
+	
+	
+	
+	 <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

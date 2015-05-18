@@ -23,8 +23,8 @@
 	</head>
 	
 	<body>	
-	<!-- Navigation -->
-	<div class="container navigasi">
+	<!-- Navigation -->	
+   <div class="container navigasi">
 		<nav class="navbar navbar-inverse navbar-default text-center navigasi" role="navigation">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -61,8 +61,27 @@
 						<li>
 							<a href="my-cart.html">Chart (0)</a>
 						</li>
-						<li>
-							<a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+						<li class="dropdown hidden-xs">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+							<ul class="dropdown-menu" style="padding:20px; width:300px;">
+								<form class="form-inline">
+									<button type="submit" class="btn btn-default pull-right" style="width:30%; height:34px;"><i class="glyphicon glyphicon-search"></i></button>
+									<input type="text" class="form-control pull-left" style="width:70%;" placeholder="Search...">
+								</form>
+							  </ul>
+						</li>
+						<li class="visible-xs">
+						  <form role="search">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="input-group">
+								  <input type="text" class="form-control" name="q" style="height:40px;" placeholder="Search...">
+								  <span class="input-group-btn">
+									<button class="btn btn-primary" type="submit" style="height:40px;"><span class="glyphicon glyphicon-search"></span></button>
+									<button class="btn btn-danger" type="reset" style="height:40px;"><span class="glyphicon glyphicon-remove"></span></button>
+								  </span>
+								</div>
+							</div>
+						  </form>
 						</li>
 					</ul>
 				</div>
@@ -72,8 +91,7 @@
 	<!-- /.container -->
 	<!-- End Navigation -->
 	
-	<br/><br/><br/><br/>
-	
+	<br/><br/><br/><br/>	
 	
 	<div class="container">
 		<div class="col-md-12">
@@ -90,8 +108,7 @@
 							<div class="form-row">									
 								<hr/>					
 								<strong><p class="title-payment">SHIPPING ADDRESS</p></strong>
-								<br/>
-								
+								<br/>								
 								<strong><p>My Office</p></strong>
 								<p>Visien Vinesa (081992070707) <br/> Jln. Raya Duri No.98 A <br/> Jakarta Barat, DKI Jakarta, 11750</p>
 								<p class="edit-address"><a href=""><i class="fa fa-edit"></i> EDIT THIS ADDRESS</a></p>
@@ -100,19 +117,16 @@
 							<div class="form-row">
 							  <hr/>
 							  <strong><p class="title-payment">SHIPPING METHOD</p></strong>
-							  <br/>
-							  
+							  <br/>							  
 							  <p>You are using <strong>Nijistore Courier</strong> as your shipping method.</p>
 							</div>
 														
 							<div class="form-row">
 							   <hr/>
 							  <strong><p class="title-payment">PAYMENT METHOD</p></strong>
-							  <br/>
-							  
+							  <br/>							  
 							  <p>You are using <strong>Bank Transfer</strong> as your payment method. <br/><br/> Please transfer the payment to our local bank accounts below maximum <br/> 
-							  24 hours after you received our confirmation email. Otherwise, your order will be automatically cancelled.</p>
-							
+							  24 hours after you received our confirmation email. Otherwise, your order will be automatically cancelled.</p>							
 							  <br/>
 							  <div class="payment-info" width="50%">
 								<table class="table-responsive">
@@ -142,8 +156,7 @@
 							<div class="form-row">
 								<br/>
 								<button class="btn btn-default">PLACE ORDER</button>
-							</div>
-							
+							</div>							
 						</div>				
 					</div>
 					
@@ -260,9 +273,9 @@
 					<div class="col-sm-12 col-md-3 footers">
 						<h5><a href="#">CUSTOMER</a></h5>
 						<ul class="hidden-xs">
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms and Conditions</a></li>
-							<li><a href="#">FAQs</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
 						</ul>
 					</div>
 					
@@ -270,9 +283,9 @@
 						<h5><a href="#">SITE</a></h5>
 						<ul class="hidden-xs">
 							<li><a href="#">About Us</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#">Careers</a></li>
-							<li><a href="#">Confirm Payment</a></li>
+							<li><a href="confirm-payment.html">Confirm Payment</a></li>
 						</ul>
 					</div>
 					
