@@ -17,6 +17,9 @@
 		<!-- Style -->
 		<link href="css/custom.css" rel="stylesheet">
 		
+		<!-- Slider -->
+		<link href="css/full-slider.css" rel="stylesheet">
+		
 		<!-- Favicon -->
 		<link rel="icon" href="images/logo1.jpg" type="image/jpg" sizes="16x16">
 		
@@ -61,7 +64,7 @@
 							<a>/</a>
 						</li>
 						<li>
-							<a href="#">Sign In</a>
+							<a href="sign-in.html">Sign In</a>
 						</li>
 						<li>
 							<a href="my-cart.html">Chart (0)</a>
@@ -96,15 +99,49 @@
 	<!-- /.container -->
 	<!-- End Navigation -->
 	
-	<header>
-		<div class="header-content">
-			<div class="header-content-inner">
-				<div class="row">
-					
-				</div>
-			</div>
-		</div>
-	</header>
+	<!-- Slider -->	
+	<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+	<!-- End Slider -->
 	
 	<br/>
 	
@@ -130,7 +167,7 @@
 								<img src="images/pd-1.jpg" alt="">
 								<div class="caption">
 									<h5 class="pull-right">CAMERA</h5>
-									<h4><a href="#">FUJIFILM</a></h4>
+									<h4><a href="product.html">FUJIFILM</a></h4>
 									<hr/>
 									<p>FUJIFILM X100T</p>
 								</div>
@@ -145,7 +182,7 @@
 								<img src="http://placehold.it/320x320" alt="">
 								<div class="caption">
 									<h5 class="pull-right">CAMERA</h5>
-									<h4><a href="#">OLYMPUS</a></h4>
+									<h4><a href="product.html">OLYMPUS</a></h4>
 									<hr/>
 									<p>Plumpus OM-D E-M1 with 12-40mm f2,8 PRO + M.Zuiko Digital 45mm f/1.8</p>
 								</div>
@@ -160,7 +197,7 @@
 								<img src="http://placehold.it/320x320" alt="">
 								<div class="caption">
 									<h5 class="pull-right">CAMERA</h5>
-									<h4><a href="#">NIKON</a></h4>
+									<h4><a href="product.html">NIKON</a></h4>
 									<hr/>
 									<p>Nikon D3200 KIT with AF-S 18-55mm VR</p>
 								</div>
@@ -351,7 +388,12 @@
 			
 			<div class="row">
 				<div class="col-md-12">
-					  <div class="slider lazy instagram-gallery">
+					<div class="slider lazy instagram-gallery">
+					  <div class="slick-slide slide-cloned" data-slick-index="-4" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
 					  <div class="slick-slide slide-cloned" data-slick-index="-3" aria-hidden="true" style="width: 150px;">
 						<div class="image">
 							<img class="img-responsive" src="http://placehold.it/200x200"></img>
@@ -387,8 +429,13 @@
 							<img class="img-responsive" src="http://placehold.it/200x200"></img>
 						</div>
 					  </div>
-					  <button type="button" data-role="none" class="slick-prev fa fa-angel-left" aria-label="previous" >Previous</button>
-					  <button type="button" data-role="none" class="slick-next fa fa-angel-right" aria-label="next" >Next</button>
+					  <div class="slick-slide slide-cloned" data-slick-index="4" aria-hidden="true" style="width: 150px;">
+						<div class="image">
+							<img class="img-responsive" src="http://placehold.it/200x200"></img>
+						</div>
+					  </div>
+					  <button type="button" data-role="none" class="slick-prev" aria-label="previous" >Previous</button>
+					  <button type="button" data-role="none" class="slick-next" aria-label="next" >Next</button>
 					</div>
 				</div>
 			</div>		
@@ -462,6 +509,10 @@
 		  });
 		});
 	</script>
-	
+	<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 	</body>
 </html>
